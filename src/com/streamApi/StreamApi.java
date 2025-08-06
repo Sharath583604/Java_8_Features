@@ -23,6 +23,9 @@ public class StreamApi {
 
 		List<Employee> fist = emp.stream().filter(i -> i.ename.startsWith("s")).toList();
 		fist.forEach(n -> System.out.println(n.ename));
-
+		
+		emp.stream().filter(i -> i.ename.startsWith("s")).map(n->n.ename.toUpperCase()).forEach(System.out::println);;
+		
+		list.stream().map(n->n*n).forEach(System.out::println);
 	}
 }
