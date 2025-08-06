@@ -7,7 +7,7 @@ package com.java8;
  class Test{
 	public static void main(String[] args) {
 		
-		Demo d=new Demo() {  
+		Demo2 d=new Demo2() {  
 			@Override
 			public void calculate(int a) {
 			int 	sum=0;
@@ -16,7 +16,7 @@ package com.java8;
 			}	
 		};
 		d.calculate(20);
-		Demo d1=(a)->{ int s=0;
+		Demo2 d1=(a)->{ int s=0;
 		s=s+a;
 		System.out.println(s);
 			
