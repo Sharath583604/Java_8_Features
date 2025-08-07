@@ -40,7 +40,7 @@ public class StreamApi {
 		
 		emp.stream().filter(i -> i.ename.startsWith("s"))
 					.map(n->n.ename.toUpperCase())
-					.forEach(System.out::println);;
+					.forEach(System.out::println);
 		
 		
 	}
