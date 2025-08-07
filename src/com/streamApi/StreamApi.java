@@ -1,6 +1,7 @@
 package com.streamApi;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -40,6 +41,10 @@ public class StreamApi {
 		
 		emp.stream().filter(i -> i.ename.startsWith("s"))
 					.map(n->n.ename.toUpperCase())
+					.forEach(System.out::println);
+		
+		emp.stream().sorted(Comparator.comparing(Employee::getEname)
+									.reversed())
 					.forEach(System.out::println);
 		
 		
